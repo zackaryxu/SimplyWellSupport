@@ -12,15 +12,130 @@
     font-size: 18px;
     color: #000;
   }
-  h1 { text-align: center; font-size: 36px; margin-bottom: 20px; }
-  p { margin-bottom: 16px; }
+  h1, h2, h3, h4 { color: #000; margin-top: 24px; }
+  h1 { text-align: center; font-size: 32px; margin-bottom: 20px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 22px; }
+  p, li { margin-bottom: 16px; }
+  ul, ol { margin-left: 20px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #f2f2f2; }
   a { color: #007aff; text-decoration: none; }
   a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>This is a placeholder for the SimplyWell Privacy Policy. You can replace this text with your actual policy content.</p>
-  <p><a href="support.html">← Back to Support</a></p>
+  <h1>SimplyWell Privacy Policy</h1>
+  <p><strong>Effective Date:</strong> January 19, 2026</p>
+  <p>SimplyWell ("we," "our," or "the App") values your privacy and is committed to protecting your personal information. This Privacy Policy explains what data we collect, how we use it, and your rights as a user. It is designed to comply with iOS App Store guidelines, U.S. privacy laws, and common international standards such as GDPR and CCPA.</p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Personal Information</h3>
+  <ul>
+    <li><strong>Account Data:</strong> By default, SimplyWell uses anonymous accounts. No personally identifying information is collected unless you choose to link your account to an email or phone number.</li>
+    <li><strong>User-Generated Content:</strong> Any tasks, notes, journal entries, or media (photos/videos) you create or attach to tasks are stored locally on your device only and are not sent to our servers.</li>
+  </ul>
+
+  <h3>Health & Activity Data</h3>
+  <ul>
+    <li><strong>Physical Activity:</strong> Steps and motion data are collected directly from your device and not stored in the cloud.</li>
+    <li><strong>Check-ins & other activity data:</strong> May be automatically backed up to the cloud (Supabase), including moods and habit completion, for optional cloud sync features.</li>
+  </ul>
+
+  <h3>Location Data</h3>
+  <ul>
+    <li><strong>When In Use:</strong> Precise or coarse location data is collected only when needed to provide local weather updates and emergency contact notifications. All location data sent to third-party services (e.g., weather APIs) is anonymous and not tied to your identity.</li>
+  </ul>
+
+  <h3>Third-Party Data</h3>
+  <ul>
+    <li><strong>Trusted Contacts:</strong> Names and phone numbers of contacts you designate for safety notifications. SimplyWell relies on users to confirm consent from trusted contacts before adding their information.</li>
+  </ul>
+
+  <h2>Device Permissions</h2>
+  <p>SimplyWell requests the following device permissions:</p>
+  <table>
+    <tr>
+      <th>Permission</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Motion & Fitness</td>
+      <td>Track steps and physical activity levels.</td>
+    </tr>
+    <tr>
+      <td>Location (When in Use)</td>
+      <td>Provide local weather updates and notify emergency contacts if needed.</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Capture photos to attach to tasks or profiles.</td>
+    </tr>
+    <tr>
+      <td>Photo Library</td>
+      <td>Allow selection of existing photos for tasks.</td>
+    </tr>
+    <tr>
+      <td>Microphone</td>
+      <td>Record videos for task attachments.</td>
+    </tr>
+    <tr>
+      <td>Notifications</td>
+      <td>Send reminders for tasks, check-ins, and app updates.</td>
+    </tr>
+  </table>
+  <p>You can adjust or revoke these permissions in your device settings at any time.</p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li><strong>Supabase:</strong> For authentication and cloud storage of health/activity data (excluding steps data). Data may be stored on servers in the U.S.</li>
+    <li><strong>Expo:</strong> For app delivery and over-the-air updates. We do not use third-party analytics or crash reporting services.</li>
+    <li><strong>Weather Providers:</strong> To provide local weather updates, anonymous location coordinates may be shared with the weather API. No personally identifying information is included.</li>
+  </ul>
+  <p>For users in the European Union or other regions, data may be transferred to the United States for storage and processing. By using the App, you consent to such transfers in accordance with applicable laws.</p>
+  <p><strong>We do not sell your personal information to third parties.</strong></p>
+
+  <h2>Data Storage & Usage</h2>
+  <ul>
+    <li><strong>Local-First Approach:</strong> All user-generated content (tasks, notes, media) is stored locally on your device only. Health, activity (excluding steps), and check-in data may be backed up to the cloud (Supabase) if you opt into cloud sync features.</li>
+    <li><strong>Offline Data:</strong> Some information is stored locally (AsyncStorage) to ensure offline functionality.</li>
+    <li><strong>Retention:</strong> We retain data only as long as necessary to provide App functionality or as required by law. Deleting your account removes all associated data from our servers, including Supabase.</li>
+  </ul>
+
+  <h3>Data Security</h3>
+  <p>We use encryption in transit (HTTPS) and at rest for all data stored on our servers. Local data on your device remains under your full control. While we take reasonable measures to protect your information, no system is completely secure, and we cannot guarantee absolute security of stored data.</p>
+
+  <h3>Analytics and Logging</h3>
+  <p>SimplyWell does not use any third-party analytics or crash reporting services. Minimal anonymous data may be collected by iOS for device or OS-level reporting, which is controlled by the user's device settings.</p>
+
+  <h2>Children’s Privacy</h2>
+  <p>SimplyWell is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>Legal Basis for Processing (EU Users)</h2>
+  <p>For users in the European Economic Area (EEA), we process personal data only when we have a legal basis to do so, including:</p>
+  <ol>
+    <li>When necessary to provide services you request</li>
+    <li>With your consent for optional features like cloud sync or location-based services</li>
+    <li>For our legitimate interests, such as maintaining App performance or security</li>
+  </ol>
+
+  <h2>California Privacy Notice</h2>
+  <p>If you are a California resident, you have the right to request access to or deletion of your personal information and to know whether your data is shared with third parties. SimplyWell does not sell personal information. To exercise these rights, contact us at <a href="mailto:simplywell@foundryone.tech">simplywell@foundryone.tech</a>.</p>
+
+  <h2>Your Rights</h2>
+  <ul>
+    <li><strong>Access & Correction:</strong> You may request access to your personal data stored on SimplyWell or request corrections.</li>
+    <li><strong>Deletion:</strong> You can request deletion of your account, which will remove all associated data from our servers.</li>
+  </ul>
+  <p>To exercise your rights, please contact us at <a href="mailto:simplywell@foundryone.tech">simplywell@foundryone.tech</a>.</p>
+
+  <h2>Updates to This Policy</h2>
+  <p>We may update this Privacy Policy periodically. The latest version will always be available within the App.</p>
+
+  <h2>Contact Us</h2>
+  <p>For questions or concerns about this Privacy Policy, contact:</p>
+  <p><strong>SimplyWell Support</strong><br>Email: <a href="mailto:simplywell@foundryone.tech">simplywell@foundryone.tech</a></p>
 </body>
 </html>
